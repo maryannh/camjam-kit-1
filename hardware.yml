@@ -1,0 +1,18 @@
+- name: 1 x Tactile Push Button
+  img: tactile-push-button
+- name: 1 x Red LED
+  img: led
+- name: 1 x Amber LED
+  img: led
+- name: 1 x Green LED
+  img: led
+- name: 1 x Buzzer
+  img: piezo-buzzer
+- name: 1 x Full sized breadboard
+  img: breadboard
+- name: 3 x 330R resistors
+  img: resistor-330r
+- name: 6 x Male-to-female jumper wires
+  img: jumper-male-to-female
+- name: 1 x Male-to-male jumper wire
+  img: jumper-male-to-male
