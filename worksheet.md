@@ -18,9 +18,9 @@ To get started, you'll need to place all the components on the breadboard and co
 
     ![GPIO diagram](images/camjam1wiring.png)
 
-    *Note the row along the long side of the breadboard is connected to a ground pin on the Raspberry Pi, so all the components in that row (used as a ground rail) are hence connected to ground*
+    Note that the row along the long side of the breadboard is connected to a ground pin on the Raspberry Pi, so all the components in that row (which is used as a ground rail) are hence connected to ground.
 
-1. Observe the following table showing which GPIO pins each component is connected to:
+1. Observe the following table showing which GPIO pin each component is connected to:
 
 | Component | GPIO pin |
 | --------- | :------: |
@@ -32,7 +32,7 @@ To get started, you'll need to place all the components on the breadboard and co
 
 ## Dive into Python
 
-Now you'll open up the Python application IDLE and get started by testing out the button.
+Open up the Python application IDLE and get started by testing out the button.
 
 1. Open **Python 3** from the main menu:
 
@@ -40,7 +40,7 @@ Now you'll open up the Python application IDLE and get started by testing out th
 
 1. Create a new file by clicking **File** > **New File**. This will open up a second window.
 
-1. Save the new file straight away by clicking **File** > **Save** and entering `camjam.py` and saving in your home folder.
+1. Save the new file straight away by clicking **File** > **Save**; name the file `camjam.py` and save it in your home folder.
 
 1. Enter the following code:
 
@@ -53,13 +53,13 @@ Now you'll open up the Python application IDLE and get started by testing out th
         print(button.is_pressed)
     ```
 
-    *In GPIO Zero, you create an object for each component used, so each component interface must be imported from the gpiozero module, and an instance created on the GPIO pin number it's connected to.*
+    In GPIO Zero, you create an object for each component used, so each component interface must be imported from the gpiozero module, and an instance created on the GPIO pin number to which it is connected.
 
-1. Save and run the code by pressing `Ctrl + S` and `F5` .
+1. Save and run the code by pressing `Ctrl + S` and `F5`.
 
 1. This will bring the original Python window into focus and will be constantly printing `False`. When you press the button this will switch to `True`, and when you let go it will return to `False`.
 
-    *`button.is_pressed` is a property of the button object which provides the state of the button (pressed or not) at any given time.*
+    `button.is_pressed` is a property of the button object which provides the state of the button (pressed or not) at any given time.
 
 1. Now return to the code window and modify your `while` loop to show the following:
 
