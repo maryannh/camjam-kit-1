@@ -1,4 +1,4 @@
-- name: 1 x Tactile Push Button
+- name: 1 x Tactile push button
   img: tactile-push-button
 - name: 1 x Red LED
   img: led
@@ -8,7 +8,7 @@
   img: led
 - name: 1 x Buzzer
   img: piezo-buzzer
-- name: 1 x Full sized breadboard
+- name: 1 x Full-size breadboard
   img: breadboard
 - name: 3 x 330R resistors
   img: resistor-330r
