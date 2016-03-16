@@ -12,7 +12,7 @@ To get started, you'll need to place all the components on the breadboard and co
     - An LED requires 1 ground pin and 1 GPIO pin, with a current limiting resistor
     - A buzzer requires 1 ground pin and 1 GPIO pin
 
-    *Each component requires its own individual GPIO pin, but components can share a ground pin and we will use the breadboard to enable this.*
+    Each component requires its own individual GPIO pin, but components can share a ground pin. We will use the breadboard to enable this.
 
 1. Place the components on the breadboard and connect them to the Raspberry Pi GPIO pins according to the following diagram:
 
