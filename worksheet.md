@@ -111,7 +111,7 @@ Now you'll add an LED into the code and use GPIO Zero to allow the button to det
         led.off()
     ```
 
-1. Run your code and the LED will come on when you press the button. Hold down the button to keep the LED lit.
+1. Run your code and the LED will come on when you press the button. Hold the button down to keep the LED lit.
 
 1. Now swap the `on` and `off` lines to reverse the logic:
 
@@ -123,7 +123,7 @@ Now you'll add an LED into the code and use GPIO Zero to allow the button to det
         button.wait_for_release()
     ```
 
-1. Run the code and you'll see the LED is on until the button is pressed.
+1. Run the code and you'll see the LED stays on until the button is pressed.
 
 1. Now replace `led.on()` with `led.blink()`:
 
@@ -135,7 +135,7 @@ Now you'll add an LED into the code and use GPIO Zero to allow the button to det
         button.wait_for_release()
     ```
 
-1. Run the code and you'll see the LED blink on and off until the button is pressed, then start blinking again when the button is released.
+1. Run the code and you'll see the LED blink on and off until the button is pressed, at which point it will turn off completely. When the button is released, it will start blinking again.
 
 1. Try adding some parameters to `blink` to make it blink faster or slower:
 
@@ -143,11 +143,11 @@ Now you'll add an LED into the code and use GPIO Zero to allow the button to det
     - `led.blink(0.5, 0.5)` - half a second on, half a second on
     - `led.blink(0.1, 0.2)` - one tenth of a second on, one fifth of a second off
 
-    *`blink`'s first two (optional) parameters are `on_time` and `off_time`' - they both default to 1 second*
+    `blink`'s first two (optional) parameters are `on_time` and `off_time`': they both default to 1 second
 
 ## Traffic Lights
 
-You have three LEDs: red, amber and green. Perfect for traffic lights! And there's a built-in interface for Traffic Lights in GPIO Zero.
+You have three LEDs: red, amber, and green. Perfect for traffic lights! There's even a built-in interface for traffic lights in GPIO Zero.
 
 1. Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
 
@@ -161,7 +161,7 @@ You have three LEDs: red, amber and green. Perfect for traffic lights! And there
     lights = TrafficLights(25, 8, 7)
     ```
 
-    *The `TrafficLights` interface takes three pin numbers - one for each pin: red, amber, green (in that order)*
+    The `TrafficLights` interface takes three GPIO pin numbers, one for each pin: red, amber, and green (in that order).
 
 1. Now amend your `while` loop to control the `TrafficLights` object:
 
@@ -173,7 +173,7 @@ You have three LEDs: red, amber and green. Perfect for traffic lights! And there
         lights.off()
     ```
 
-    *The `TrafficLights` interface is very similar to that of an individual LED - you can use `on`, `off` and `blink` which controls all three lights at once.*
+    The `TrafficLights` interface is very similar to that of an individual LED: you can use `on`, `off`, and `blink` which controls all three lights at once.
 
 1. Try the `blink` example:
 
