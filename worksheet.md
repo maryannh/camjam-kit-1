@@ -272,11 +272,11 @@ As well as controlling the whole set of lights together, you can also control ea
     - Red and amber on
     - Green on
 
-    *Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly*
+    Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
 
 1. Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), give the pedestrians time to cross before moving back to green until the button is pressed again.
 
-1. Now try adding a buzzer to beep quickly to indicate it's safe to cross (for the benefit of sight impaired pedestrians).
+1. Now try adding a buzzer to beep quickly to indicate that it is safe to cross (for the benefit of visually-impaired pedestrians).
 
 ## What next?
 
